@@ -8,6 +8,7 @@
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios con comprensión de listas
+import numpy as np
 
 
 if __name__ == '__main__':
@@ -26,9 +27,14 @@ if __name__ == '__main__':
     # para aplicar en este caso.
     list_numeros_str = ['5', '2', '3', '', '7', 'NaN']
 
+    lista_numeros = [x if x.isdigit() is True else 0 for x in list_numeros_str]
+
+    print(lista_numeros)
+
 
     # ¿Ya terminaron el ejercicio? ¿Por qué no prueban
     # hacer negativo alguno de los números de la lista?
     # ¿Qué sucede con isdigit? Sorprendente no?
+
 
     print("terminamos")
