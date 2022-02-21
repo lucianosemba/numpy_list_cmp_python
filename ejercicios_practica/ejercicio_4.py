@@ -27,7 +27,8 @@ if __name__ == '__main__':
     # para aplicar en este caso.
     list_numeros_str = ['5', '2', '3', '', '7', 'NaN']
 
-    lista_numeros = [x if x.isdigit() is True else 0 for x in list_numeros_str]
+    lista_numeros = [int(x) if x.isdigit() is True else 0 for x in list_numeros_str]
+
 
     print(lista_numeros)
 
